@@ -1,0 +1,50 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+/* variables */
+:root {
+    /* font */
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-black: 900;
+    /* color */
+    --clr-primary-200: hsl(225, 100%, 94%);
+    --clr-primary-500: hsl(245, 75%, 52%);
+    --clr-neutral-100: hsl(225, 100%, 98%);
+    --clr-neutral-300: hsl(224, 23%, 55%);
+    --clr-neutral-800: hsl(223, 47%, 23%);
+}
+
+/* reset */
+/* box-model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* remove built in button typography style */
+button {
+    font: inherit;
+}
+/* general styling */
+body {
+    /* layout */
+    min-height: 100vh;
+    /* display */
+    display: grid;
+    place-content: center;
+    /* font */
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1rem;
+    font-weight: var(--fw-medium);
+    color: var(--clr-neutral-300);
+    /* background */
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--clr-primary-200);
+}
